@@ -1,0 +1,21 @@
+8
+1, Entrada
+2, Lobos
+3, Prado
+4, Fonte
+5, Borboletario
+6, Parque Infantil
+7, Ilha dos Macacos
+8, Papagaios
+11
+1, caminho, caminho1, 1, 2, true, 10, 100
+2, caminho, caminho2, 2, 3, true, 10, 100
+3, caminho, caminho3, 3, 4, true, 5, 50
+4, ponte, ponte1, 4, 5, true, 3, 30
+5, ponte, ponte2, 5, 8, true, 30, 300
+6, caminho, caminho4, 8, 1, true, 5, 50
+7, caminho, caminho5, 8, 7, false, 45, 450
+8, caminho, caminho6, 6, 7, false, 45, 450
+9, caminho, caminho7, 1, 5, true, 100, 30
+10, caminho, caminho8, 5, 6, true, 20, 200
+11, caminho, caminho9, 6, 8, true, 20, 200

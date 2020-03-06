@@ -1,0 +1,14 @@
+Id: 1
+Data: Mon Jan 28 00:43:19 GMT 2019
+Percurso: teste
+Percurso Custo: 10
+Percurso Distancia: 200
+Percurso Tipo Percurso: Pe
+Percurso Nº de Pontos: 3
+Percurso Pontos: [Lobos(2), Entrada(1)]
+Percurso Caminho: [
+->(caminho1 1 [100 miles,  10 €])
+, 
+->(caminho1 1 [100 miles,  10 €])
+]
+Fatura: Fatura{data=Mon Jan 28 00:43:19 GMT 2019, NIF=999999999}

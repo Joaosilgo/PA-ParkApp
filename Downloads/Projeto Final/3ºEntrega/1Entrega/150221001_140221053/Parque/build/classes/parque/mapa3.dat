@@ -1,0 +1,23 @@
+7
+1, Entrada
+2, Aquario
+3, Terrario
+4, Floresta
+5, Pantano
+6, Selva
+7, Deserto
+14
+1, ponte, ponte1, 2, 6, true, 2, 30
+2, ponte, ponte2, 6, 7, false, 3, 20
+3, ponte, ponte3, 5, 6, true, 2, 10
+4, ponte, ponte4, 4, 6, true, 1, 10
+5, ponte, ponte5, 3, 1, true, 4, 20
+6, caminho, caminho1, 1, 2, true, 3, 15
+7, caminho, caminho2, 2, 3, true, 2, 25
+8, caminho, caminho3, 4, 1, true, 2, 20
+9, caminho, caminho4, 7, 5, true, 1, 10
+10, caminho, caminho5, 5, 2, false, 1, 5
+11, caminho, caminho6, 4, 7, true, 2, 20
+12, caminho, caminho7, 7, 2, true, 3, 30
+13, caminho, caminho8, 1, 4, false, 1, 10
+14, caminho, caminho9, 1, 7, true, 5, 15

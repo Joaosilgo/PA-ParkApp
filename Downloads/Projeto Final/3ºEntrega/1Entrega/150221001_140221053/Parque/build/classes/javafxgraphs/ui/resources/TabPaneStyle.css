@@ -1,0 +1,165 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25/dez/2018, 17:59:15
+    Author     : joaos
+*/
+
+.tab {
+
+    -fx-pref-width: 415.5;
+       
+} 
+.tab-header-area
+{
+    
+    
+}
+.tab-header-background {
+    -fx-background-color:transparent;
+      
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab > .tab-container > .tab-label {
+    -fx-alignment: CENTER;
+     /*-fx-pref-width: 419.0;
+   -fx-text-fill: -fx-text-base-color;*/
+}
+.tab-pane{
+    -fx-padding: 0 -1 -1 -1;
+     -fx-alignment: CENTER;
+}
+tab-pane .tab :selected {
+    -fx-background-color: #f1f1f1; /* When this */
+}
+
+.tab-pane .tab-label {
+    -fx-text-fill: #0093ff;
+    -fx-font-weight: normal; /* And this,
+                                are both used in style,
+                                they're causing this bug */
+}
+.tab-pane.active { animation-name: fadeIn; animation-duration: 300ms; animation-timing-function: linear; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.settings-tab:selected{
+    -fx-background-color: springgreen;
+}
+/* Colors of JavaFX pie chart slices. */
+
+	.data0.chart-pie { -fx-pie-color: turquoise; }
+
+	.data1.chart-pie { -fx-pie-color: aquamarine; }
+
+	.data2.chart-pie { -fx-pie-color: cornflowerblue; }
+
+	.data3.chart-pie { -fx-pie-color: blue; }
+
+	.data4.chart-pie { -fx-pie-color: cadetblue; }
+
+	.data5.chart-pie { -fx-pie-color: navy; }
+
+	.data6.chart-pie { -fx-pie-color: deepskyblue; }
+
+	.data7.chart-pie { -fx-pie-color: cyan; }
+
+	.data8.chart-pie { -fx-pie-color: steelblue; }
+
+	.data9.chart-pie { -fx-pie-color: teal; }
+
+	.data10.chart-pie { -fx-pie-color: royalblue; }
+
+	.data11.chart-pie { -fx-pie-color: dodgerblue; }
+
+	 
+
+	/* Pie Chart legend background color and stroke. */
+
+	.chart-legend { -fx-background-color: gray; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+* {
+    -fx-primary : #2A2E37;
+    -fx-secondary : #FFFF8D;
+    -fx-primarytext : #B2B2B2;
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000;
+    -fx-color-1:#1976D2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tab{
+    -fx-background-color: -fx-primary;
+}
+
+.tab-header-background{
+    -fx-background-color: -fx-primary;
+}
+
+.tab-label{
+    -fx-text-fill: -fx-secondary;
+    -fx-font-size: 10pt; 
+}
+
+
+.tab-main{
+    -fx-pref-height : 60;
+    -fx-max-height : 60;
+}
+
+.settings-tab{
+    -fx-background-color: derive(-fx-primary, 10%);
+    -fx-padding: 5px 20px 5px 20px;
+}
+
+.settings-tab:selected{
+    -fx-background-color: -fx-secondary;
+}
+
+.settings-tab:selected .tab-label{
+    -fx-text-fill: -fx-primary;
+}
+
+.settings-tab .tab-header-background{
+    -fx-background-color: derive(-fx-primary, -50%);
+}*/

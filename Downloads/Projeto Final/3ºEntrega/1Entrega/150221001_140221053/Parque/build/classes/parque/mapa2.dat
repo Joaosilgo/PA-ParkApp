@@ -1,0 +1,29 @@
+12
+1, Entrada
+2, Leoes
+3, Golfinhos
+4, Ursos
+5, Aves
+6, Aquario repteis
+7, Girafas
+8, Elefantes
+9, Primatas
+10, Focas
+11, Tigres
+12, Animais da quinta
+13, Zona de restauracao
+14
+1, ponte, ponteAquario, 2, 6, true, 5, 40
+2, ponte, ponteRepteis, 6, 11, false, 2, 30
+3, ponte, pontePrimatas, 9, 6, true, 4, 10
+4, ponte, ponteAves, 5, 6, true, 1, 10
+5, ponte, ponteAquatica, 3, 10, false, 2, 5
+6, caminho, caminhoLeoes, 1, 2, true, 3, 15
+7, caminho, caminhoFelinos, 2, 11, true, 6, 30
+8, caminho, caminhoAnimaisQuinta, 12, 1, true, 2, 20
+9, caminho, caminhoPrimatas, 9, 5, true, 3, 10
+10, caminho, caminhoAves, 5, 2, false, 1, 5
+11, caminho, caminhoUrsos, 4, 7, true, 4, 20
+12, caminho, caminhoGirafas, 7, 2, true, 3, 25
+13, caminho, caminhoRestauracao, 1, 13, false, 1, 10
+14, caminho, caminhoElefantes, 8, 7, true, 5, 30

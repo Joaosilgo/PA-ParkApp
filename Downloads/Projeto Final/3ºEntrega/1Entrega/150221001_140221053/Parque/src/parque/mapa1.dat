@@ -1,0 +1,23 @@
+8
+1, Entrada
+2, Tigres
+3, Pomar
+4, Veados
+5, Moinho
+6, Lago
+7, Quinta Pedagogica
+8, Papagaios
+12
+1, ponte, ponteLilas, 1, 2, true, 10, 50
+2, ponte, ponteLago, 3, 6, false, 30, 20
+3, ponte, ponteVermelha, 5, 8, true, 10, 50
+4, caminho, alameda, 2, 5, true, 1, 100
+5, caminho, selva, 2, 6, false, 2, 200
+6, caminho, floresta, 4, 5, true, 0, 150
+7, caminho, escuro, 3, 7, true, 2, 300
+8, caminho, ruidoso, 8, 7, true, 12, 50
+9, caminho, silvestre, 1, 8, true, 20, 350
+10, caminho, florido, 3, 4, false, 15, 20
+11, caminho, quinta, 7, 1, true, 8, 250
+12, caminho, rosas, 3, 1, true, 1, 180
+
