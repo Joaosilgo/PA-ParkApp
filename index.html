@@ -1,0 +1,631 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_003{font-family:"Calibri",serif;font-size:32.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:"Calibri",serif;font-size:32.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_004{font-family:"Calibri",serif;font-size:40.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:"Calibri",serif;font-size:40.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_005{font-family:"Calibri",serif;font-size:22.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:"Calibri",serif;font-size:22.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_006{font-family:"Calibri",serif;font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_006{font-family:"Calibri",serif;font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_025{font-family:"Calibri",serif;font-size:20.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_025{font-family:"Calibri",serif;font-size:20.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:"Calibri",serif;font-size:16.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_008{font-family:"Calibri",serif;font-size:16.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_009{font-family:Times,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_009{font-family:Times,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_010{font-family:"Calibri Light",serif;font-size:20.0px;color:rgb(46,83,149);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_010{font-family:"Calibri Light",serif;font-size:20.0px;color:rgb(46,83,149);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_011{font-family:"Calibri",serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_011{font-family:"Calibri",serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_012{font-family:"Calibri Light",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_012{font-family:"Calibri Light",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_013{font-family:"Calibri Bold",serif;font-size:14.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_013{font-family:"Calibri Bold",serif;font-size:14.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Tahoma,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Tahoma,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_002{font-family:"Calibri",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-family:"Calibri",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_016{font-family:"Georgia",serif;font-size:10.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_016{font-family:"Georgia",serif;font-size:10.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_017{font-family:"Calibri",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_017{font-family:"Calibri",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_018{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_018{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_019{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_019{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_021{font-family:"Calibri Italic",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_021{font-family:"Calibri Italic",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_026{font-family:"Calibri Italic",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: underline}
+div.cls_026{font-family:"Calibri Italic",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_022{font-family:Arial,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_022{font-family:Arial,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_023{font-family:Arial,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_023{font-family:Arial,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_027{font-family:"Calibri",serif;font-size:14.0px;color:rgb(0,111,192);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_027{font-family:"Calibri",serif;font-size:14.0px;color:rgb(0,111,192);font-weight:normal;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-297px;top:0px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background01.jpg" width=595 height=841></div>
+<div style="position:absolute;left:160.15px;top:205.31px" class="cls_003"><span class="cls_003">Programação Avançada</span></div>
+<div style="position:absolute;left:224.26px;top:247.07px" class="cls_004"><span class="cls_004">2018/2019</span></div>
+<div style="position:absolute;left:162.07px;top:300.38px" class="cls_005"><span class="cls_005">Licenciatura em Engª. Informática</span></div>
+<div style="position:absolute;left:55.46px;top:340.46px" class="cls_006"><span class="cls_006">Aplicação para Emissão de Bilhete-Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:204.58px;top:398.08px" class="cls_005"><span class="cls_005">Docente: Bruno Silva</span></div>
+<div style="position:absolute;left:301.80px;top:693.86px" class="cls_025"><span class="cls_025">Realizado por:</span></div>
+<div style="position:absolute;left:301.80px;top:718.10px" class="cls_008"><span class="cls_008">140221053 - Jorge Silva</span></div>
+<div style="position:absolute;left:302.04px;top:741.14px" class="cls_008"><span class="cls_008">150221006 - João da Silva Gomes</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:851px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background02.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:54.02px;top:89.10px" class="cls_010"><span class="cls_010">Índice</span></div>
+<div style="position:absolute;left:54.02px;top:121.77px" class="cls_011"><span class="cls_011">Introdução</span></div>
+<div style="position:absolute;left:533.74px;top:121.77px" class="cls_011"><span class="cls_011">3</span></div>
+<div style="position:absolute;left:54.02px;top:145.29px" class="cls_011"><span class="cls_011">TADs implementadas</span></div>
+<div style="position:absolute;left:533.74px;top:145.29px" class="cls_011"><span class="cls_011">4</span></div>
+<div style="position:absolute;left:54.02px;top:168.57px" class="cls_011"><span class="cls_011">Diagrama de classes</span></div>
+<div style="position:absolute;left:533.74px;top:168.57px" class="cls_011"><span class="cls_011">5</span></div>
+<div style="position:absolute;left:54.02px;top:192.11px" class="cls_011"><span class="cls_011">Javadoc</span></div>
+<div style="position:absolute;left:533.74px;top:192.11px" class="cls_011"><span class="cls_011">9</span></div>
+<div style="position:absolute;left:54.02px;top:215.63px" class="cls_011"><span class="cls_011">Padrões de software</span></div>
+<div style="position:absolute;left:526.78px;top:215.63px" class="cls_011"><span class="cls_011">10</span></div>
+<div style="position:absolute;left:54.02px;top:238.91px" class="cls_011"><span class="cls_011">Refactoring</span></div>
+<div style="position:absolute;left:526.78px;top:238.91px" class="cls_011"><span class="cls_011">12</span></div>
+<div style="position:absolute;left:54.02px;top:262.43px" class="cls_011"><span class="cls_011">Libraries/JarFiles utilizados</span></div>
+<div style="position:absolute;left:526.78px;top:262.43px" class="cls_011"><span class="cls_011">28</span></div>
+<div style="position:absolute;left:54.02px;top:285.98px" class="cls_011"><span class="cls_011">Tecnologias utilizadas</span></div>
+<div style="position:absolute;left:526.78px;top:285.98px" class="cls_011"><span class="cls_011">29</span></div>
+<div style="position:absolute;left:512.38px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 2</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:1702px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background03.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:54.02px;top:89.10px" class="cls_010"><span class="cls_010">Introdução</span></div>
+<div style="position:absolute;left:89.33px;top:121.53px" class="cls_011"><span class="cls_011">Pretende-se desenvolver uma aplicação que permita gerar percursos a pé e de</span></div>
+<div style="position:absolute;left:54.02px;top:138.57px" class="cls_011"><span class="cls_011">bicicleta dentro de um parque biológico. A aplicação disponibiliza informação sobre o</span></div>
+<div style="position:absolute;left:54.02px;top:155.61px" class="cls_011"><span class="cls_011">preço total a pagar pelo percurso selecionado e permite ainda a emissão de bilhetes e</span></div>
+<div style="position:absolute;left:54.02px;top:172.89px" class="cls_011"><span class="cls_011">respetiva fatura.</span></div>
+<div style="position:absolute;left:89.33px;top:189.93px" class="cls_011"><span class="cls_011">O parque biológico é constituído por vários pontos de interesses, pontos esses</span></div>
+<div style="position:absolute;left:54.02px;top:206.99px" class="cls_011"><span class="cls_011">que estão conectados ou por caminhos, ou por pontes; os caminhos podem ser</span></div>
+<div style="position:absolute;left:54.02px;top:224.03px" class="cls_011"><span class="cls_011">percorridos em qualquer sentido, mas as </span><span class="cls_013">pontes só podem ser percorridas num</span></div>
+<div style="position:absolute;left:54.02px;top:241.07px" class="cls_013"><span class="cls_013">sentido</span><span class="cls_011">. Existem </span><span class="cls_013">ainda conexões que não permitem a circulação de bicicletas</span><span class="cls_011">. Cada</span></div>
+<div style="position:absolute;left:54.02px;top:258.35px" class="cls_011"><span class="cls_011">conexão tem um custo, e uma distância associada.</span></div>
+<div style="position:absolute;left:89.33px;top:275.66px" class="cls_011"><span class="cls_011">Cada percurso </span><span class="cls_013">inicia e termina no ponto de entrada do parque</span><span class="cls_011">, e poderá passar</span></div>
+<div style="position:absolute;left:54.02px;top:294.14px" class="cls_011"><span class="cls_011">por vários pontos de interesse selecionados pelo utilizador. O utilizador deverá poder</span></div>
+<div style="position:absolute;left:54.02px;top:312.62px" class="cls_011"><span class="cls_011">calcular o seu percurso de forma a minimizar a distância, ou o custo do mesmo.</span></div>
+<div style="position:absolute;left:512.38px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 3</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:2553px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background04.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:54.02px;top:89.10px" class="cls_010"><span class="cls_010">TADs implementadas</span></div>
+<div style="position:absolute;left:89.33px;top:121.77px" class="cls_011"><span class="cls_011">No nosso projeto tivemos de recorrer à utilização do algoritmo Dijkstra, este</span></div>
+<div style="position:absolute;left:54.02px;top:140.73px" class="cls_011"><span class="cls_011">calcula o custo m</span><span class="cls_014">í</span><span class="cls_011">nimo do vértice raiz para os demais. Assim sendo, usámos este</span></div>
+<div style="position:absolute;left:54.02px;top:159.93px" class="cls_011"><span class="cls_011">algoritmo sobre um d</span><span class="cls_014">í</span><span class="cls_011">grafo orientado com a raiz no nosso ponto de entrada, os</span></div>
+<div style="position:absolute;left:54.02px;top:178.41px" class="cls_011"><span class="cls_011">restantes pontos do nosso mapa sendo os vértices do grafo e os caminhos/pontes as</span></div>
+<div style="position:absolute;left:54.02px;top:196.91px" class="cls_011"><span class="cls_011">diversas arestas orientadas.</span></div>
+<div style="position:absolute;left:512.38px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 4</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:3404px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background05.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:54.02px;top:89.10px" class="cls_010"><span class="cls_010">Diagrama de classes</span></div>
+<div style="position:absolute;left:72.02px;top:121.77px" class="cls_002"><span class="cls_002">1-   BILHETE</span></div>
+<div style="position:absolute;left:54.02px;top:247.79px" class="cls_002"><span class="cls_002">Fig.1</span></div>
+<div style="position:absolute;left:72.02px;top:292.94px" class="cls_002"><span class="cls_002">2-   DAO</span></div>
+<div style="position:absolute;left:54.02px;top:537.57px" class="cls_002"><span class="cls_002">Fig.2</span></div>
+<div style="position:absolute;left:72.02px;top:582.45px" class="cls_002"><span class="cls_002">3-   MVC CONTROLLER</span></div>
+<div style="position:absolute;left:54.02px;top:644.15px" class="cls_002"><span class="cls_002">Fig.3</span></div>
+<div style="position:absolute;left:512.38px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 5</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:4255px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background06.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:72.02px;top:89.34px" class="cls_002"><span class="cls_002">4-   MVC MODELS</span></div>
+<div style="position:absolute;left:54.02px;top:337.10px" class="cls_002"><span class="cls_002">Fig.4</span></div>
+<div style="position:absolute;left:72.02px;top:382.00px" class="cls_002"><span class="cls_002">5-   MVC VIEWS</span></div>
+<div style="position:absolute;left:54.02px;top:568.05px" class="cls_002"><span class="cls_002">Fig.5</span></div>
+<div style="position:absolute;left:72.02px;top:613.19px" class="cls_002"><span class="cls_002">6-   PDFGenerator</span></div>
+<div style="position:absolute;left:54.02px;top:686.63px" class="cls_002"><span class="cls_002">Fig.6</span></div>
+<div style="position:absolute;left:512.38px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 6</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:5106px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background07.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:72.02px;top:89.34px" class="cls_002"><span class="cls_002">7-   SINGLETON</span></div>
+<div style="position:absolute;left:54.02px;top:227.39px" class="cls_002"><span class="cls_002">Fig.7</span></div>
+<div style="position:absolute;left:72.02px;top:272.51px" class="cls_002"><span class="cls_002">8-   MAIN</span></div>
+<div style="position:absolute;left:54.02px;top:349.10px" class="cls_002"><span class="cls_002">Fig.8</span></div>
+<div style="position:absolute;left:72.02px;top:394.00px" class="cls_002"><span class="cls_002">9-   DIGRAPH GRAPH</span></div>
+<div style="position:absolute;left:54.02px;top:643.43px" class="cls_002"><span class="cls_002">Fig.9</span></div>
+<div style="position:absolute;left:512.38px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 7</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:5957px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background08.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:72.02px;top:89.34px" class="cls_002"><span class="cls_002">10- DIGRAPH MODEL</span></div>
+<div style="position:absolute;left:54.02px;top:410.56px" class="cls_002"><span class="cls_002">Fig.10</span></div>
+<div style="position:absolute;left:512.38px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 8</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:6808px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background09.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:54.02px;top:89.10px" class="cls_010"><span class="cls_010">Javadoc</span></div>
+<div style="position:absolute;left:54.02px;top:121.77px" class="cls_013"><span class="cls_013">Bilhete</span><span class="cls_011"> </span><span class="cls_002">- </span><span class="cls_016">Classe que representa um bilhete com a informação do percurso associado.</span></div>
+<div style="position:absolute;left:54.02px;top:140.25px" class="cls_013"><span class="cls_013">Fatura</span><span class="cls_016"> - Classe que representa uma fatura associada a um bilhete.</span></div>
+<div style="position:absolute;left:54.02px;top:158.73px" class="cls_013"><span class="cls_013">BilheteDAOFactory</span><span class="cls_016"> - Classe que cria instâncias de bilhetes.</span></div>
+<div style="position:absolute;left:54.02px;top:177.21px" class="cls_013"><span class="cls_013">BilheteDAOFile</span><span class="cls_016"> - Classe File onde se cria as tabelas manualmente para inserir o bilhete.</span></div>
+<div style="position:absolute;left:54.02px;top:195.47px" class="cls_013"><span class="cls_013">BilheteDAOJson</span><span class="cls_016">- Classe que guarda o bilhete como objecto através da sua coleção de pares de</span></div>
+<div style="position:absolute;left:54.02px;top:213.47px" class="cls_016"><span class="cls_016">valores.</span></div>
+<div style="position:absolute;left:54.02px;top:226.91px" class="cls_013"><span class="cls_013">BilheteDAOSerialization</span><span class="cls_016"> - Serialização de uma classe, é ativada pela classe que implementa a</span></div>
+<div style="position:absolute;left:54.02px;top:245.39px" class="cls_016"><span class="cls_016">interface do bilhete</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:54.02px;top:259.79px" class="cls_013"><span class="cls_013">PercursoController</span><span class="cls_002"> - </span><span class="cls_016">Classe controller do percurso.</span></div>
+<div style="position:absolute;left:54.02px;top:278.30px" class="cls_013"><span class="cls_013">Percurso</span><span class="cls_016"> - Classe model para o percurso.</span></div>
+<div style="position:absolute;left:54.02px;top:296.78px" class="cls_013"><span class="cls_013">PercursoCareTaker</span><span class="cls_016"> - Classe Care Taker para guardar e recuperar os estados do percurso.</span></div>
+<div style="position:absolute;left:54.02px;top:315.26px" class="cls_013"><span class="cls_013">PercursoMemento</span><span class="cls_016"> - Classe Memento do MVC.</span></div>
+<div style="position:absolute;left:54.02px;top:333.50px" class="cls_013"><span class="cls_013">EstatisticaParque</span><span class="cls_016"> - Class View das estatísticas do parque.</span></div>
+<div style="position:absolute;left:54.02px;top:351.98px" class="cls_013"><span class="cls_013">MenuEmissaoBilheteUI</span><span class="cls_016"> - Classe view do menu de emissão de bilhete.</span></div>
+<div style="position:absolute;left:54.02px;top:370.48px" class="cls_013"><span class="cls_013">MenuPrincipalParqueUI</span><span class="cls_016"> - Classe view do menu principal do parque.</span></div>
+<div style="position:absolute;left:54.02px;top:388.96px" class="cls_013"><span class="cls_013">GenerateTicket</span><span class="cls_016"> - Classe que gera os PDF's de fatura e bilhete.</span></div>
+<div style="position:absolute;left:54.02px;top:407.44px" class="cls_013"><span class="cls_013">Conexao</span><span class="cls_016"> - Classe modelo do algoritmo Dijkstra que gere o percurso atual com todos os pontos de</span></div>
+<div style="position:absolute;left:54.02px;top:425.44px" class="cls_016"><span class="cls_016">interesse.</span></div>
+<div style="position:absolute;left:54.02px;top:438.64px" class="cls_013"><span class="cls_013">ParquePlanner</span><span class="cls_016"> -  Classe modelo que gere o parque.</span></div>
+<div style="position:absolute;left:54.02px;top:457.14px" class="cls_013"><span class="cls_013">Ponto</span><span class="cls_016"> - Classe representativa de um ponto do grafo.</span></div>
+<div style="position:absolute;left:512.38px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 9</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:7659px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background10.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:54.02px;top:89.10px" class="cls_010"><span class="cls_010">Padrões de software</span></div>
+<div style="position:absolute;left:68.90px;top:121.77px" class="cls_008"><span class="cls_008">Nome</span></div>
+<div style="position:absolute;left:185.35px;top:121.77px" class="cls_008"><span class="cls_008">Definição</span></div>
+<div style="position:absolute;left:394.49px;top:121.77px" class="cls_008"><span class="cls_008">Utilização</span></div>
+<div style="position:absolute;left:128.45px;top:142.41px" class="cls_017"><span class="cls_017">DAO é um padrão de projetos onde</span></div>
+<div style="position:absolute;left:128.45px;top:159.21px" class="cls_017"><span class="cls_017">um objeto:</span></div>
+<div style="position:absolute;left:146.47px;top:176.73px" class="cls_018"><span class="cls_018">•</span><span class="cls_019"> </span><span class="cls_017">  provê uma interface que</span></div>
+<div style="position:absolute;left:314.78px;top:185.37px" class="cls_017"><span class="cls_017">Padrao que guarda o Bilhete como objecto, e</span></div>
+<div style="position:absolute;left:164.47px;top:193.53px" class="cls_017"><span class="cls_017">abstrai o acesso a dados;</span></div>
+<div style="position:absolute;left:314.78px;top:202.19px" class="cls_017"><span class="cls_017">todos os seus atributos.</span></div>
+<div style="position:absolute;left:62.18px;top:213.95px" class="cls_017"><span class="cls_017">Data Acess</span></div>
+<div style="position:absolute;left:146.47px;top:211.07px" class="cls_018"><span class="cls_018">•</span><span class="cls_019"> </span><span class="cls_017">  lê e grava a partir da origem</span></div>
+<div style="position:absolute;left:314.78px;top:218.99px" class="cls_017"><span class="cls_017">Tipos Implementados:</span></div>
+<div style="position:absolute;left:72.74px;top:228.59px" class="cls_017"><span class="cls_017">Object</span></div>
+<div style="position:absolute;left:164.47px;top:227.87px" class="cls_017"><span class="cls_017">de dados (banco de dados,</span></div>
+<div style="position:absolute;left:332.78px;top:236.03px" class="cls_017"><span class="cls_017">1.  BilheteDAOFile</span></div>
+<div style="position:absolute;left:73.94px;top:243.23px" class="cls_017"><span class="cls_017">(DAO)</span></div>
+<div style="position:absolute;left:164.47px;top:244.67px" class="cls_017"><span class="cls_017">arquivo, memória, etc.);</span></div>
+<div style="position:absolute;left:332.78px;top:252.83px" class="cls_017"><span class="cls_017">2.  BilheteDAOJson</span></div>
+<div style="position:absolute;left:146.47px;top:262.19px" class="cls_018"><span class="cls_018">•</span><span class="cls_019"> </span><span class="cls_017">  encapsula o acesso aos</span></div>
+<div style="position:absolute;left:332.78px;top:269.63px" class="cls_017"><span class="cls_017">3.  BilheteDAOSerialization</span></div>
+<div style="position:absolute;left:164.47px;top:279.02px" class="cls_017"><span class="cls_017">dados, de forma que as</span></div>
+<div style="position:absolute;left:164.47px;top:295.82px" class="cls_017"><span class="cls_017">demais classes não</span></div>
+<div style="position:absolute;left:164.47px;top:312.62px" class="cls_017"><span class="cls_017">precisam saber sobre isso.</span></div>
+<div style="position:absolute;left:128.45px;top:420.16px" class="cls_017"><span class="cls_017">P</span><A HREF="https://pt.wikipedia.org/wiki/Padr%C3%A3o_de_arquitetura">adrão de arquitetura</A> de software</div>
+<div style="position:absolute;left:128.45px;top:436.96px" class="cls_017"><span class="cls_017">que separa a representação da</span></div>
+<div style="position:absolute;left:314.78px;top:440.32px" class="cls_017"><span class="cls_017">Componentes Principais</span></div>
+<div style="position:absolute;left:128.45px;top:453.78px" class="cls_017"><span class="cls_017">informação da interação do usuário</span></div>
+<div style="position:absolute;left:72.98px;top:458.34px" class="cls_017"><span class="cls_017">Model</span></div>
+<div style="position:absolute;left:314.78px;top:457.14px" class="cls_017"><span class="cls_017">Models:</span></div>
+<div style="position:absolute;left:76.82px;top:472.98px" class="cls_017"><span class="cls_017">View</span></div>
+<div style="position:absolute;left:128.45px;top:470.82px" class="cls_017"><span class="cls_017">com ele. Este </span><A HREF="https://pt.wikipedia.org/wiki/Padr%C3%A3o_de_projeto">padrão separa</A> </div>
+<div style="position:absolute;left:332.78px;top:474.66px" class="cls_018"><span class="cls_018">•</span><span class="cls_019"> </span><span class="cls_017">  Percurso</span></div>
+<div style="position:absolute;left:65.54px;top:487.62px" class="cls_017"><span class="cls_017">Controler</span></div>
+<div style="position:absolute;left:128.45px;top:487.62px" class="cls_017"><span class="cls_017">componentes maiores</span></div>
+<div style="position:absolute;left:314.78px;top:491.46px" class="cls_017"><span class="cls_017">Views:</span></div>
+<div style="position:absolute;left:73.46px;top:502.26px" class="cls_017"><span class="cls_017">(MVC)</span></div>
+<div style="position:absolute;left:128.45px;top:504.42px" class="cls_017"><span class="cls_017">possibilitando a </span><A HREF="https://pt.wikipedia.org/wiki/Reutiliza%C3%A7%C3%A3o_de_c%C3%B3digo">reutilização de</A> </div>
+<div style="position:absolute;left:332.78px;top:508.98px" class="cls_018"><span class="cls_018">•</span><span class="cls_019"> </span><span class="cls_017">  MenuPrincipalParqueUI</span></div>
+<div style="position:absolute;left:128.45px;top:521.22px" class="cls_017"><span class="cls_017"> </span><A HREF="https://pt.wikipedia.org/wiki/Reutiliza%C3%A7%C3%A3o_de_c%C3%B3digo">código</A> e desenvolvimento paralelo</div>
+<div style="position:absolute;left:332.78px;top:526.53px" class="cls_018"><span class="cls_018">•</span><span class="cls_019"> </span><span class="cls_017">  MenuEmissaoBilheteUI</span></div>
+<div style="position:absolute;left:128.45px;top:538.05px" class="cls_017"><span class="cls_017">de maneira eficiente.</span></div>
+<div style="position:absolute;left:314.78px;top:543.33px" class="cls_017"><span class="cls_017">Controller:</span></div>
+<div style="position:absolute;left:332.78px;top:560.85px" class="cls_018"><span class="cls_018">•</span><span class="cls_019"> </span><span class="cls_017">  PercursoController</span></div>
+<div style="position:absolute;left:314.78px;top:577.65px" class="cls_017"><span class="cls_017">MVC é uma aqutectura entre camadas em</span></div>
+<div style="position:absolute;left:314.78px;top:594.45px" class="cls_017"><span class="cls_017">que no nosso caso, o percurso é o modelo,</span></div>
+<div style="position:absolute;left:314.78px;top:611.27px" class="cls_017"><span class="cls_017">que é controlado pelo percursoController</span></div>
+<div style="position:absolute;left:314.78px;top:628.31px" class="cls_017"><span class="cls_017">que por sua vez tem as views representadas.</span></div>
+<div style="position:absolute;left:128.45px;top:645.59px" class="cls_017"><span class="cls_017"> </span><A HREF="https://pt.wikipedia.org/wiki/Padr%C3%A3o_de_projeto_de_software">Padrão de projeto de software</A> que</div>
+<div style="position:absolute;left:314.78px;top:650.39px" class="cls_017"><span class="cls_017">Observable: ParquePlanner</span></div>
+<div style="position:absolute;left:128.45px;top:662.39px" class="cls_017"><span class="cls_017">define uma dependência um-para-</span></div>
+<div style="position:absolute;left:314.78px;top:665.03px" class="cls_017"><span class="cls_017">Observer: MenuPrincipalParqueInterface</span></div>
+<div style="position:absolute;left:128.45px;top:679.19px" class="cls_017"><span class="cls_017">muitos entre objetos de modo a que</span></div>
+<div style="position:absolute;left:66.50px;top:697.22px" class="cls_017"><span class="cls_017">Observer</span></div>
+<div style="position:absolute;left:128.45px;top:696.02px" class="cls_017"><span class="cls_017">quando um </span><A HREF="https://pt.wikipedia.org/wiki/Objeto">objeto</A> muda o estado,</div>
+<div style="position:absolute;left:128.45px;top:713.06px" class="cls_017"><span class="cls_017">todos  os  seus  dependentes  são</span></div>
+<div style="position:absolute;left:314.78px;top:714.74px" class="cls_017"><span class="cls_017">O modelo parquePlanner é o modelo que</span></div>
+<div style="position:absolute;left:128.45px;top:729.86px" class="cls_017"><span class="cls_017">notificados</span></div>
+<div style="position:absolute;left:212.19px;top:729.86px" class="cls_017"><span class="cls_017">e</span></div>
+<div style="position:absolute;left:248.43px;top:729.86px" class="cls_017"><span class="cls_017">atualizados</span></div>
+<div style="position:absolute;left:314.78px;top:729.38px" class="cls_017"><span class="cls_017">está a ser observado e manipulado pela view</span></div>
+<div style="position:absolute;left:128.45px;top:746.66px" class="cls_017"><span class="cls_017">automaticamente.</span></div>
+<div style="position:absolute;left:314.78px;top:744.02px" class="cls_017"><span class="cls_017">que é o observador</span></div>
+<div style="position:absolute;left:506.14px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 10</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:8510px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background11.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:128.45px;top:89.82px" class="cls_017"><span class="cls_017">P</span><A HREF="https://pt.wikipedia.org/wiki/Padr%C3%B5es_de_projeto_de_software">adrão de projeto de software</A> que</div>
+<div style="position:absolute;left:314.78px;top:89.82px" class="cls_017"><span class="cls_017">Visto que na  aplicação precisamos  de uma</span></div>
+<div style="position:absolute;left:128.45px;top:106.86px" class="cls_017"><span class="cls_017">garante a existência de apenas uma</span></div>
+<div style="position:absolute;left:314.78px;top:106.86px" class="cls_017"><span class="cls_017">infraestrutura de log de dados,</span></div>
+<div style="position:absolute;left:66.02px;top:124.65px" class="cls_017"><span class="cls_017">Singleton</span></div>
+<div style="position:absolute;left:128.45px;top:123.69px" class="cls_017"><span class="cls_017">instância de uma </span><A HREF="https://pt.wikipedia.org/wiki/Classe_(programa%C3%A7%C3%A3o)">classe,</A> mantendo</div>
+<div style="position:absolute;left:314.78px;top:123.69px" class="cls_017"><span class="cls_017">implementamos assim uma classe do padrão</span></div>
+<div style="position:absolute;left:128.45px;top:140.49px" class="cls_017"><span class="cls_017">um  ponto  global  de  acesso  ao</span></div>
+<div style="position:absolute;left:314.78px;top:140.49px" class="cls_017"><span class="cls_017">singleton. Desta forma existe apenas um</span></div>
+<div style="position:absolute;left:128.45px;top:157.29px" class="cls_017"><span class="cls_017">seu </span><A HREF="https://pt.wikipedia.org/wiki/Objeto_(programa%C3%A7%C3%A3o)">objeto.</A> </div>
+<div style="position:absolute;left:314.78px;top:157.29px" class="cls_017"><span class="cls_017">objeto responsável pelo logger.</span></div>
+<div style="position:absolute;left:128.45px;top:174.57px" class="cls_017"><span class="cls_017">Padrão de projeto de software que</span></div>
+<div style="position:absolute;left:128.45px;top:191.61px" class="cls_017"><span class="cls_017">permite armazenar o estado interno</span></div>
+<div style="position:absolute;left:128.45px;top:208.43px" class="cls_017"><span class="cls_017">de um objeto em um determinando</span></div>
+<div style="position:absolute;left:314.78px;top:216.83px" class="cls_017"><span class="cls_017">Utilizamos para guardar o estado da lista de</span></div>
+<div style="position:absolute;left:64.58px;top:226.43px" class="cls_017"><span class="cls_017">Memento</span></div>
+<div style="position:absolute;left:128.45px;top:225.23px" class="cls_017"><span class="cls_017">momento, para que seja possível</span></div>
+<div style="position:absolute;left:314.78px;top:233.63px" class="cls_017"><span class="cls_017">pontos de interesse escolhida pelo utilizador</span></div>
+<div style="position:absolute;left:128.45px;top:242.03px" class="cls_017"><span class="cls_017">retorná-lo a este estado, sem que</span></div>
+<div style="position:absolute;left:128.45px;top:258.83px" class="cls_017"><span class="cls_017">isso   cause   problemas   com   o</span></div>
+<div style="position:absolute;left:128.45px;top:275.87px" class="cls_017"><span class="cls_017">encapsulamento.</span></div>
+<div style="position:absolute;left:506.14px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 11</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:9361px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background12.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:54.02px;top:89.10px" class="cls_010"><span class="cls_010">Refactoring</span></div>
+<div style="position:absolute;left:75.14px;top:121.77px" class="cls_008"><span class="cls_008">Tipos de Bad-smells</span></div>
+<div style="position:absolute;left:233.14px;top:121.77px" class="cls_008"><span class="cls_008">Número de situações</span></div>
+<div style="position:absolute;left:424.01px;top:121.77px" class="cls_008"><span class="cls_008">Técnicas de</span></div>
+<div style="position:absolute;left:424.25px;top:141.21px" class="cls_008"><span class="cls_008">Refactoring</span></div>
+<div style="position:absolute;left:388.73px;top:161.85px" class="cls_017"><span class="cls_017">Extract Method, Extract Class,</span></div>
+<div style="position:absolute;left:99.17px;top:176.49px" class="cls_017"><span class="cls_017">Duplicated Code</span></div>
+<div style="position:absolute;left:299.16px;top:176.49px" class="cls_017"><span class="cls_017">2</span></div>
+<div style="position:absolute;left:407.69px;top:176.49px" class="cls_017"><span class="cls_017">Pull Up Method, Form</span></div>
+<div style="position:absolute;left:417.53px;top:191.13px" class="cls_017"><span class="cls_017">Template Method</span></div>
+<div style="position:absolute;left:400.01px;top:208.91px" class="cls_017"><span class="cls_017">Collapse Hierarchy, Inline</span></div>
+<div style="position:absolute;left:84.74px;top:223.55px" class="cls_017"><span class="cls_017">Speculative Generality</span></div>
+<div style="position:absolute;left:299.16px;top:223.55px" class="cls_017"><span class="cls_017">1</span></div>
+<div style="position:absolute;left:398.09px;top:223.55px" class="cls_017"><span class="cls_017">Class, Remove Parameter,</span></div>
+<div style="position:absolute;left:420.65px;top:238.19px" class="cls_017"><span class="cls_017">Rename Method</span></div>
+<div style="position:absolute;left:386.57px;top:266.03px" class="cls_017"><span class="cls_017">Extract Method, Replace Temp</span></div>
+<div style="position:absolute;left:106.61px;top:273.23px" class="cls_017"><span class="cls_017">Long Method</span></div>
+<div style="position:absolute;left:299.16px;top:273.23px" class="cls_017"><span class="cls_017">3</span></div>
+<div style="position:absolute;left:434.59px;top:280.70px" class="cls_017"><span class="cls_017">with Query</span></div>
+<div style="position:absolute;left:400.97px;top:305.66px" class="cls_017"><span class="cls_017">Replace Conditional with</span></div>
+<div style="position:absolute;left:391.37px;top:320.30px" class="cls_017"><span class="cls_017">Polymorphism, Replace Type</span></div>
+<div style="position:absolute;left:387.77px;top:334.94px" class="cls_017"><span class="cls_017">Code with Subclasses, Replace</span></div>
+<div style="position:absolute;left:97.01px;top:349.58px" class="cls_017"><span class="cls_017">Switch Statments</span></div>
+<div style="position:absolute;left:299.16px;top:349.58px" class="cls_017"><span class="cls_017">1</span></div>
+<div style="position:absolute;left:385.85px;top:349.58px" class="cls_017"><span class="cls_017">Type Code with State/Strategy,</span></div>
+<div style="position:absolute;left:403.13px;top:364.24px" class="cls_017"><span class="cls_017">Replace Parameter with</span></div>
+<div style="position:absolute;left:394.49px;top:378.88px" class="cls_017"><span class="cls_017">Explicit Methods, Introduce</span></div>
+<div style="position:absolute;left:432.19px;top:393.76px" class="cls_017"><span class="cls_017">Null Objects</span></div>
+<div style="position:absolute;left:402.65px;top:419.20px" class="cls_017"><span class="cls_017">Delete unused code and</span></div>
+<div style="position:absolute;left:112.85px;top:426.40px" class="cls_017"><span class="cls_017">Dead Code</span></div>
+<div style="position:absolute;left:299.16px;top:426.40px" class="cls_017"><span class="cls_017">5</span></div>
+<div style="position:absolute;left:425.69px;top:433.84px" class="cls_017"><span class="cls_017">unneeded files</span></div>
+<div style="position:absolute;left:393.53px;top:469.38px" class="cls_017"><span class="cls_017">Extract Class, Introduce Null</span></div>
+<div style="position:absolute;left:99.41px;top:476.58px" class="cls_017"><span class="cls_017">Temporary Field</span></div>
+<div style="position:absolute;left:299.16px;top:476.58px" class="cls_017"><span class="cls_017">1</span></div>
+<div style="position:absolute;left:445.63px;top:484.02px" class="cls_017"><span class="cls_017">Object</span></div>
+<div style="position:absolute;left:506.14px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 12</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:10212px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background13.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:65.78px;top:89.58px" class="cls_011"><span class="cls_011">Bad smell</span></div>
+<div style="position:absolute;left:63.62px;top:107.34px" class="cls_011"><span class="cls_011">Explicação</span></div>
+<div style="position:absolute;left:63.14px;top:124.89px" class="cls_011"><span class="cls_011">Técnica de</span></div>
+<div style="position:absolute;left:61.70px;top:141.93px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:77.06px;top:292.46px" class="cls_011"><span class="cls_011">Antes</span></div>
+<div style="position:absolute;left:61.70px;top:309.50px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:78.98px;top:522.45px" class="cls_011"><span class="cls_011">Após</span></div>
+<div style="position:absolute;left:61.70px;top:539.49px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:506.14px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 13</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:11063px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background14.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:136.37px;top:89.82px" class="cls_017"><span class="cls_017">Speculative Generality</span></div>
+<div style="position:absolute;left:65.06px;top:90.78px" class="cls_011"><span class="cls_011">Bad smell</span></div>
+<div style="position:absolute;left:136.37px;top:109.74px" class="cls_017"><span class="cls_017">Quando existe uma classe, um método ou um parâmetro não utilizado.</span></div>
+<div style="position:absolute;left:62.90px;top:115.53px" class="cls_011"><span class="cls_011">Explicação</span></div>
+<div style="position:absolute;left:136.37px;top:124.41px" class="cls_017"><span class="cls_017">Neste caso estávamos a fazer o try catch mal não passando a messagem do erro.</span></div>
+<div style="position:absolute;left:62.42px;top:147.93px" class="cls_011"><span class="cls_011">Técnica de</span></div>
+<div style="position:absolute;left:136.37px;top:150.57px" class="cls_017"><span class="cls_017">Introduce Assertion- Pedaço de código assume alguma coisa sobre o estado do</span></div>
+<div style="position:absolute;left:61.22px;top:164.97px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:136.37px;top:165.21px" class="cls_017"><span class="cls_017">programa. Fazer com que a assunção seja explicita consoante a asserção.</span></div>
+<div style="position:absolute;left:76.34px;top:303.74px" class="cls_011"><span class="cls_011">Antes</span></div>
+<div style="position:absolute;left:61.22px;top:320.78px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:78.50px;top:541.41px" class="cls_011"><span class="cls_011">Após</span></div>
+<div style="position:absolute;left:61.22px;top:558.45px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:506.14px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 14</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:11914px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background15.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:63.62px;top:89.58px" class="cls_011"><span class="cls_011">Bad smell</span></div>
+<div style="position:absolute;left:133.49px;top:89.82px" class="cls_017"><span class="cls_017">Long method ; Switch Statments</span></div>
+<div style="position:absolute;left:133.49px;top:107.58px" class="cls_017"><span class="cls_017">Long method-Um método com muitas linhas de código;</span></div>
+<div style="position:absolute;left:61.46px;top:120.81px" class="cls_011"><span class="cls_011">Explicação</span></div>
+<div style="position:absolute;left:133.49px;top:122.25px" class="cls_017"><span class="cls_017">Switch Statments- Quando se possui um operador switch ou uma sequência de</span></div>
+<div style="position:absolute;left:133.49px;top:136.89px" class="cls_017"><span class="cls_017">instruções if.</span></div>
+<div style="position:absolute;left:60.98px;top:151.77px" class="cls_011"><span class="cls_011">Técnica de</span></div>
+<div style="position:absolute;left:133.49px;top:152.01px" class="cls_017"><span class="cls_017">Replace Error Code with Exception- Método que retorna mensagem de erro com</span></div>
+<div style="position:absolute;left:133.49px;top:166.65px" class="cls_017"><span class="cls_017">em vez disso retorna a exceção e o tratamento dela com a View.showError().</span></div>
+<div style="position:absolute;left:59.78px;top:168.81px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:74.90px;top:266.03px" class="cls_011"><span class="cls_011">Antes</span></div>
+<div style="position:absolute;left:59.78px;top:283.10px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:77.06px;top:453.06px" class="cls_011"><span class="cls_011">Após</span></div>
+<div style="position:absolute;left:59.78px;top:470.34px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:506.14px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 15</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:12765px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background16.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:63.62px;top:89.58px" class="cls_011"><span class="cls_011">Bad smell</span></div>
+<div style="position:absolute;left:60.98px;top:107.34px" class="cls_011"><span class="cls_011">Técnica de</span></div>
+<div style="position:absolute;left:133.49px;top:117.21px" class="cls_017"><span class="cls_017">Replace Error Code with Exception</span></div>
+<div style="position:absolute;left:59.78px;top:124.41px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:74.90px;top:172.89px" class="cls_011"><span class="cls_011">Antes</span></div>
+<div style="position:absolute;left:59.78px;top:189.93px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:77.06px;top:311.18px" class="cls_011"><span class="cls_011">Após</span></div>
+<div style="position:absolute;left:59.78px;top:328.22px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:506.14px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 16</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:13616px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background17.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:63.62px;top:89.58px" class="cls_011"><span class="cls_011">Bad smell</span></div>
+<div style="position:absolute;left:60.98px;top:107.34px" class="cls_011"><span class="cls_011">Técnica de</span></div>
+<div style="position:absolute;left:133.49px;top:117.21px" class="cls_017"><span class="cls_017">Replace Error Code with Exception</span></div>
+<div style="position:absolute;left:59.78px;top:124.41px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:74.90px;top:153.45px" class="cls_011"><span class="cls_011">Antes</span></div>
+<div style="position:absolute;left:59.78px;top:170.49px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:77.06px;top:272.27px" class="cls_011"><span class="cls_011">Após</span></div>
+<div style="position:absolute;left:59.78px;top:289.34px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:506.14px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 17</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:14467px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background18.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:63.62px;top:89.58px" class="cls_011"><span class="cls_011">Bad smell</span></div>
+<div style="position:absolute;left:133.49px;top:91.02px" class="cls_017"><span class="cls_017">Dead Code - Linha de código que nunca é utilizada</span></div>
+<div style="position:absolute;left:133.49px;top:107.58px" class="cls_017"><span class="cls_017">If dentro de try catch , impossibilidade de capturar o erro e trata-lo, Assim</span></div>
+<div style="position:absolute;left:61.46px;top:113.37px" class="cls_011"><span class="cls_011">Explicação</span></div>
+<div style="position:absolute;left:133.49px;top:122.25px" class="cls_017"><span class="cls_017">retiramos o if e tratamos o erro com a view.</span></div>
+<div style="position:absolute;left:60.98px;top:137.13px" class="cls_011"><span class="cls_011">Técnica de</span></div>
+<div style="position:absolute;left:133.49px;top:146.97px" class="cls_017"><span class="cls_017">Move Method- movemos a captura de erro no getBtEmitirBilhete</span></div>
+<div style="position:absolute;left:59.78px;top:154.17px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:74.90px;top:266.51px" class="cls_011"><span class="cls_011">Antes</span></div>
+<div style="position:absolute;left:59.78px;top:283.58px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:77.06px;top:477.78px" class="cls_011"><span class="cls_011">Após</span></div>
+<div style="position:absolute;left:59.78px;top:494.82px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:506.14px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 18</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:15318px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background19.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:63.62px;top:89.58px" class="cls_011"><span class="cls_011">Bad smell</span></div>
+<div style="position:absolute;left:60.98px;top:107.34px" class="cls_011"><span class="cls_011">Técnica de</span></div>
+<div style="position:absolute;left:133.49px;top:117.21px" class="cls_017"><span class="cls_017">Move Method</span></div>
+<div style="position:absolute;left:59.78px;top:124.41px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:133.49px;top:142.17px" class="cls_017"><span class="cls_017">Removemos o ciclo </span><span class="cls_021">for</span><span class="cls_017"> dentro do contructor e criamos o metodo que é</span></div>
+<div style="position:absolute;left:61.46px;top:148.17px" class="cls_011"><span class="cls_011">Explicação</span></div>
+<div style="position:absolute;left:133.49px;top:156.81px" class="cls_017"><span class="cls_017">responsavél por adicionar pontos à comboBox.</span></div>
+<div style="position:absolute;left:74.90px;top:231.95px" class="cls_011"><span class="cls_011">Antes</span></div>
+<div style="position:absolute;left:59.78px;top:249.23px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:77.06px;top:404.08px" class="cls_011"><span class="cls_011">Após</span></div>
+<div style="position:absolute;left:59.78px;top:421.12px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:506.14px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 19</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:16169px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background20.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:63.62px;top:89.58px" class="cls_011"><span class="cls_011">Bad smell</span></div>
+<div style="position:absolute;left:133.49px;top:89.82px" class="cls_017"><span class="cls_017">Dead Code</span></div>
+<div style="position:absolute;left:133.49px;top:107.58px" class="cls_017"><span class="cls_017">PercursoManager </span><span class="cls_021">class </span><span class="cls_017">que se tornou obsoleta na nossa implementação, pois não</span></div>
+<div style="position:absolute;left:61.46px;top:113.37px" class="cls_011"><span class="cls_011">Explicação</span></div>
+<div style="position:absolute;left:133.49px;top:122.25px" class="cls_017"><span class="cls_017">iremos alterar o percurso final depois de criado.</span></div>
+<div style="position:absolute;left:60.98px;top:137.13px" class="cls_011"><span class="cls_011">Técnica de</span></div>
+<div style="position:absolute;left:133.49px;top:146.97px" class="cls_021"><span class="cls_021">Class</span><span class="cls_017"> que não é mais utilizada pois tornou-se obsoleta.</span></div>
+<div style="position:absolute;left:59.78px;top:154.17px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:74.90px;top:322.70px" class="cls_011"><span class="cls_011">Antes</span></div>
+<div style="position:absolute;left:59.78px;top:339.74px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:77.06px;top:509.22px" class="cls_011"><span class="cls_011">Após</span></div>
+<div style="position:absolute;left:133.49px;top:519.06px" class="cls_017"><span class="cls_017">Eliminada a classe inutilizada.</span></div>
+<div style="position:absolute;left:59.78px;top:526.29px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:506.14px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 20</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:17020px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background21.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:63.62px;top:89.58px" class="cls_011"><span class="cls_011">Bad smell</span></div>
+<div style="position:absolute;left:133.49px;top:89.82px" class="cls_017"><span class="cls_017">Dupicated  code</span></div>
+<div style="position:absolute;left:133.49px;top:107.58px" class="cls_017"><span class="cls_017">Definir as condiçoes no metodo getNifInput() para capturar e tratar os erros na</span></div>
+<div style="position:absolute;left:61.46px;top:113.37px" class="cls_011"><span class="cls_011">Explicação</span></div>
+<div style="position:absolute;left:133.49px;top:122.25px" class="cls_017"><span class="cls_017">acção do generateBilhete()</span></div>
+<div style="position:absolute;left:60.98px;top:137.13px" class="cls_011"><span class="cls_011">Técnica de</span></div>
+<div style="position:absolute;left:133.49px;top:137.37px" class="cls_017"><span class="cls_017">Extract Mehod-Mover o codigo para um novo metodo separado e substituir o</span></div>
+<div style="position:absolute;left:133.49px;top:152.01px" class="cls_017"><span class="cls_017">código por uma chamada para o novo metodo</span></div>
+<div style="position:absolute;left:59.78px;top:154.17px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:74.90px;top:301.82px" class="cls_011"><span class="cls_011">Antes</span></div>
+<div style="position:absolute;left:59.78px;top:318.86px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:77.06px;top:569.97px" class="cls_011"><span class="cls_011">Após</span></div>
+<div style="position:absolute;left:59.78px;top:587.01px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:506.14px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 21</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:17871px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background22.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:63.62px;top:89.58px" class="cls_011"><span class="cls_011">Bad smell</span></div>
+<div style="position:absolute;left:133.49px;top:89.82px" class="cls_017"><span class="cls_017">Long Method</span></div>
+<div style="position:absolute;left:133.49px;top:107.58px" class="cls_017"><span class="cls_017">Ao observarmos o metodo start do main, conseguimos ver bastante</span></div>
+<div style="position:absolute;left:61.46px;top:120.81px" class="cls_011"><span class="cls_011">Explicação</span></div>
+<div style="position:absolute;left:133.49px;top:122.25px" class="cls_017"><span class="cls_017">desorganização e um metodo bastante longo, o que nos levou a fragmentar o</span></div>
+<div style="position:absolute;left:133.49px;top:136.89px" class="cls_017"><span class="cls_017">codigo</span></div>
+<div style="position:absolute;left:60.98px;top:151.77px" class="cls_011"><span class="cls_011">Técnica de</span></div>
+<div style="position:absolute;left:133.49px;top:152.01px" class="cls_017"><span class="cls_017">Extract Method- Mover o codigo para um novo metodo separado e substituir o</span></div>
+<div style="position:absolute;left:133.49px;top:166.65px" class="cls_017"><span class="cls_017">código por uma chamada para o novo metodo</span></div>
+<div style="position:absolute;left:59.78px;top:168.81px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:74.90px;top:291.98px" class="cls_011"><span class="cls_011">Antes</span></div>
+<div style="position:absolute;left:59.78px;top:309.02px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:78.98px;top:574.77px" class="cls_017"><span class="cls_017">Após</span></div>
+<div style="position:absolute;left:64.34px;top:589.41px" class="cls_017"><span class="cls_017">refactoring</span></div>
+<div style="position:absolute;left:506.14px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 22</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:18722px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background23.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:63.14px;top:89.58px" class="cls_011"><span class="cls_011">Bad smell</span></div>
+<div style="position:absolute;left:132.29px;top:89.82px" class="cls_017"><span class="cls_017">Long Method</span></div>
+<div style="position:absolute;left:132.29px;top:107.58px" class="cls_017"><span class="cls_017">O metodo estava confuso e demasiado longo logo fragmentamos o codigo e</span></div>
+<div style="position:absolute;left:60.98px;top:120.81px" class="cls_011"><span class="cls_011">Explicação</span></div>
+<div style="position:absolute;left:132.29px;top:122.25px" class="cls_017"><span class="cls_017">fizemos uma chamada aos novos metodos(</span><span class="cls_026">setPathsColor(planner, graphView);</span></div>
+<div style="position:absolute;left:132.29px;top:136.89px" class="cls_021"><span class="cls_021">setArrows(graphView);)</span><span class="cls_017"> no </span><span class="cls_021">start()</span></div>
+<div style="position:absolute;left:60.50px;top:151.77px" class="cls_011"><span class="cls_011">Técnica de</span></div>
+<div style="position:absolute;left:132.29px;top:152.01px" class="cls_017"><span class="cls_017">Extract Method- Mover o codigo para um novo metodo separado e substituir o</span></div>
+<div style="position:absolute;left:132.29px;top:166.65px" class="cls_017"><span class="cls_017">código por uma chamada para o novo metodo</span></div>
+<div style="position:absolute;left:62.42px;top:168.81px" class="cls_011"><span class="cls_011">refactorin</span></div>
+<div style="position:absolute;left:87.41px;top:185.85px" class="cls_011"><span class="cls_011">g</span></div>
+<div style="position:absolute;left:74.42px;top:275.66px" class="cls_011"><span class="cls_011">Antes</span></div>
+<div style="position:absolute;left:62.42px;top:292.70px" class="cls_011"><span class="cls_011">refactorin</span></div>
+<div style="position:absolute;left:87.41px;top:309.98px" class="cls_011"><span class="cls_011">g</span></div>
+<div style="position:absolute;left:76.34px;top:494.34px" class="cls_011"><span class="cls_011">Após</span></div>
+<div style="position:absolute;left:62.42px;top:511.62px" class="cls_011"><span class="cls_011">refactorin</span></div>
+<div style="position:absolute;left:87.41px;top:528.69px" class="cls_011"><span class="cls_011">g</span></div>
+<div style="position:absolute;left:506.14px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 23</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:19573px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background24.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:133.49px;top:101.82px" class="cls_017"><span class="cls_017">Dead Code</span></div>
+<div style="position:absolute;left:63.62px;top:104.70px" class="cls_011"><span class="cls_011">Bad smell</span></div>
+<div style="position:absolute;left:61.46px;top:137.37px" class="cls_011"><span class="cls_011">Explicação</span></div>
+<div style="position:absolute;left:133.49px;top:139.05px" class="cls_017"><span class="cls_017">Excluir o código não utilizado</span></div>
+<div style="position:absolute;left:60.98px;top:155.13px" class="cls_011"><span class="cls_011">Técnica de</span></div>
+<div style="position:absolute;left:133.49px;top:164.97px" class="cls_017"><span class="cls_017">Metodo que não é mais utilizado pois tornou-se obsoleto.</span></div>
+<div style="position:absolute;left:59.78px;top:172.17px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:74.90px;top:189.69px" class="cls_011"><span class="cls_011">Antes</span></div>
+<div style="position:absolute;left:59.78px;top:206.75px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:77.06px;top:225.23px" class="cls_011"><span class="cls_011">Após</span></div>
+<div style="position:absolute;left:133.49px;top:235.31px" class="cls_017"><span class="cls_017">Eliminado o método inutilizado.</span></div>
+<div style="position:absolute;left:59.78px;top:242.27px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:133.49px;top:336.86px" class="cls_017"><span class="cls_017">Dead Code</span></div>
+<div style="position:absolute;left:63.62px;top:339.50px" class="cls_011"><span class="cls_011">Bad smell</span></div>
+<div style="position:absolute;left:61.46px;top:380.08px" class="cls_011"><span class="cls_011">Explicação</span></div>
+<div style="position:absolute;left:133.49px;top:384.64px" class="cls_021"><span class="cls_021">Class </span><span class="cls_017">que se tornou obsoleta ao nosso padrão de M.V.C.</span></div>
+<div style="position:absolute;left:60.98px;top:405.52px" class="cls_011"><span class="cls_011">Técnica de</span></div>
+<div style="position:absolute;left:133.49px;top:415.60px" class="cls_017"><span class="cls_017">Class que não é mais utilizada pois tornou-se obsoleta</span></div>
+<div style="position:absolute;left:59.78px;top:422.56px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:74.90px;top:489.06px" class="cls_011"><span class="cls_011">Antes</span></div>
+<div style="position:absolute;left:59.78px;top:506.10px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:77.06px;top:576.45px" class="cls_011"><span class="cls_011">Após</span></div>
+<div style="position:absolute;left:133.49px;top:586.29px" class="cls_017"><span class="cls_017">Eliminada a classe inutilizada.</span></div>
+<div style="position:absolute;left:59.78px;top:593.49px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:506.14px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 24</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:20424px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background25.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:133.49px;top:101.82px" class="cls_017"><span class="cls_017">Temporary Field</span></div>
+<div style="position:absolute;left:63.62px;top:104.70px" class="cls_011"><span class="cls_011">Bad smell</span></div>
+<div style="position:absolute;left:133.49px;top:137.61px" class="cls_017"><span class="cls_017">Campos temporários são criados para uso em um algoritmo que requer uma</span></div>
+<div style="position:absolute;left:133.49px;top:152.49px" class="cls_017"><span class="cls_017">grande quantidade de entradas. Portanto, em vez de criar um grande número de</span></div>
+<div style="position:absolute;left:61.46px;top:158.25px" class="cls_011"><span class="cls_011">Explicação</span></div>
+<div style="position:absolute;left:133.49px;top:167.13px" class="cls_017"><span class="cls_017">parâmetros no método, decidimos criar campos para esses dados na classe. Esses</span></div>
+<div style="position:absolute;left:133.49px;top:181.77px" class="cls_017"><span class="cls_017">campos são usados apenas no algoritmo e não são usados o resto do tempo.</span></div>
+<div style="position:absolute;left:60.98px;top:196.67px" class="cls_011"><span class="cls_011">Técnica de</span></div>
+<div style="position:absolute;left:133.49px;top:206.51px" class="cls_017"><span class="cls_017">Criar atributos de class</span></div>
+<div style="position:absolute;left:59.78px;top:213.71px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:74.90px;top:318.62px" class="cls_011"><span class="cls_011">Antes</span></div>
+<div style="position:absolute;left:59.78px;top:335.66px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:77.06px;top:534.69px" class="cls_011"><span class="cls_011">Após</span></div>
+<div style="position:absolute;left:59.78px;top:551.73px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:506.14px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 25</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:21275px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background26.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:65.06px;top:91.02px" class="cls_011"><span class="cls_011">Bad smell</span></div>
+<div style="position:absolute;left:136.13px;top:92.46px" class="cls_017"><span class="cls_017">Dead Code-Unused Parameter</span></div>
+<div style="position:absolute;left:62.90px;top:111.45px" class="cls_011"><span class="cls_011">Explicação</span></div>
+<div style="position:absolute;left:136.13px;top:112.89px" class="cls_017"><span class="cls_017">Reparámos que existiam vários imports desnecessários e inutilizados</span></div>
+<div style="position:absolute;left:62.42px;top:136.89px" class="cls_011"><span class="cls_011">Técnica de</span></div>
+<div style="position:absolute;left:136.13px;top:142.41px" class="cls_017"><span class="cls_017">Remove Parameter</span></div>
+<div style="position:absolute;left:60.98px;top:153.93px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:76.34px;top:332.78px" class="cls_011"><span class="cls_011">Antes</span></div>
+<div style="position:absolute;left:60.98px;top:349.82px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:78.26px;top:614.15px" class="cls_011"><span class="cls_011">Após</span></div>
+<div style="position:absolute;left:59.78px;top:631.43px" class="cls_011"><span class="cls_011">Refactoring</span></div>
+<div style="position:absolute;left:506.14px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 26</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:22126px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background27.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:65.78px;top:89.58px" class="cls_011"><span class="cls_011">Bad smell</span></div>
+<div style="position:absolute;left:137.33px;top:89.82px" class="cls_017"><span class="cls_017">Duplicated Code</span></div>
+<div style="position:absolute;left:63.62px;top:107.34px" class="cls_011"><span class="cls_011">Explicação</span></div>
+<div style="position:absolute;left:63.14px;top:124.89px" class="cls_011"><span class="cls_011">Técnica de</span></div>
+<div style="position:absolute;left:61.70px;top:141.93px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:77.06px;top:282.14px" class="cls_011"><span class="cls_011">Antes</span></div>
+<div style="position:absolute;left:61.70px;top:299.18px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:78.98px;top:443.46px" class="cls_011"><span class="cls_011">Após</span></div>
+<div style="position:absolute;left:61.70px;top:460.50px" class="cls_011"><span class="cls_011">refactoring</span></div>
+<div style="position:absolute;left:506.14px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 27</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:22977px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background28.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:54.02px;top:89.10px" class="cls_010"><span class="cls_010">Libraries/JarFiles utilizados</span></div>
+<div style="position:absolute;left:54.02px;top:127.77px" class="cls_011"><span class="cls_011">Estão na pasta de Jar_Files:</span></div>
+<div style="position:absolute;left:71.78px;top:152.97px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> </span><span class="cls_011"> gson-2.3.1 - Utilizado para o DAO BilheteDAOJson</span></div>
+<div style="position:absolute;left:71.78px;top:172.17px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> </span><span class="cls_011"> itextpdf-5.5.4 - Utilizado gerar o pdf e o QR code</span></div>
+<div style="position:absolute;left:71.78px;top:191.37px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> </span><span class="cls_011"> sqlite-jdbc<A HREF="https://www.facebook.com/">-3.21.</A>0 - Utilizado para o DAO</span></div>
+<div style="position:absolute;left:506.14px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 28</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:23828px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="e6f653d2-89bc-11eb-8b25-0cc47a792c0a_id_e6f653d2-89bc-11eb-8b25-0cc47a792c0a_files/background29.jpg" width=595 height=841></div>
+<div style="position:absolute;left:117.65px;top:36.54px" class="cls_009"><span class="cls_009">Aplicação para Emissão de Bilhete - Percurso num Parque Biológico</span></div>
+<div style="position:absolute;left:54.02px;top:89.10px" class="cls_010"><span class="cls_010">Tecnologias utilizadas</span></div>
+<div style="position:absolute;left:54.02px;top:121.77px" class="cls_027"><span class="cls_027"> </span><A HREF="http://graphonline.ru/en/?fbclid=IwAR2E9nk_6ADo2Tk2YvtT66nsl--4JA1FU_XSkt4cognZAA4Xqf_DNVMXBBU">http://graphonline.ru/en/</A> <span class="cls_011"> - Utilizado para auxilio de calculo e teste de percursos</span></div>
+<div style="position:absolute;left:54.02px;top:140.25px" class="cls_011"><span class="cls_011">calculados.</span></div>
+<div style="position:absolute;left:506.14px;top:784.36px" class="cls_012"><span class="cls_012">Pág. 29</span></div>
+</div>
+
+</body>
+</html>
